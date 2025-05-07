@@ -1,4 +1,4 @@
-# alpdev
+# alpdev [![Build and Push Docker Image](https://github.com/Fullaxx/alpdev/actions/workflows/docker-build.yml/badge.svg?branch=master)](https://github.com/Fullaxx/alpdev/actions/workflows/docker-build.yml)
 A development image based on Alpine
 
 ## Base Docker Image
