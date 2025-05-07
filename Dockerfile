@@ -62,6 +62,7 @@ RUN apk update && \
       tshark \
       unzip \
       vim \
+      xz-dev xz-static \
       zeromq-dev libzmq-static \
       zip \
       zlib-dev zlib-static \
