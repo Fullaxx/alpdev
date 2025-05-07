@@ -38,7 +38,6 @@ RUN apk update && \
       libpcap-dev \
       libwebsockets-dev \
       libxml2-dev libxml2-static \
-      zeromq-dev libzmq-static \
       lsof \
       meson \
       nano \
@@ -60,6 +59,7 @@ RUN apk update && \
       tshark \
       unzip \
       vim \
+      zeromq-dev libzmq-static libsodium-static \
       zip \
       zlib-dev zlib-static && \
     rm -rf /var/cache/apk/*
