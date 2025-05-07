@@ -6,6 +6,6 @@ A development image based on Alpine
 
 ## Get the image from Docker Hub or Build it locally
 ```
-docker pull fullaxx/alpinedev
+docker pull fullaxx/alpdev
 docker build -f Dockerfile -t="fullaxx/alpdev" github.com/Fullaxx/alpdev
 ```
