@@ -15,6 +15,7 @@ RUN apk update && \
     apk add --no-cache \
       alpine-sdk \
       bash bash-completion \
+      brotli-dev brotli-static \
       build-base \
       ca-certificates \
       cgdb \
@@ -36,9 +37,11 @@ RUN apk update && \
       libmicrohttpd-dev libmicrohttpd-static \
       libnet-dev libnet-static \
       libpcap-dev \
+      libsodium-dev libsodium-static \
       libwebsockets-dev \
       libxml2-dev libxml2-static \
       lsof \
+      lz4-dev lz4-static \
       meson \
       nano \
       net-tools \
@@ -59,9 +62,10 @@ RUN apk update && \
       tshark \
       unzip \
       vim \
-      zeromq-dev libzmq-static libsodium-static \
+      zeromq-dev libzmq-static \
       zip \
-      zlib-dev zlib-static && \
+      zlib-dev zlib-static \
+      zstd-dev zstd-static && \
     rm -rf /var/cache/apk/*
 
 # ------------------------------------------------------------------------------
