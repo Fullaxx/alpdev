@@ -38,7 +38,7 @@ RUN apk update && \
       libpcap-dev \
       libwebsockets-dev \
       libxml2-dev libxml2-static \
-      libzmq libzmq-static \
+      zeromq-dev libzmq-static \
       lsof \
       meson \
       nano \
