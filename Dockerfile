@@ -1,11 +1,11 @@
 # ------------------------------------------------------------------------------
 # Pull base image
-FROM alpine:latest
+FROM alpine:3.23.5
 LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 
 # ------------------------------------------------------------------------------
 # Set environment variables
-ENV QLIBCVERS="2.5.0"
+ENV QLIBCVERS="2.5.1"
 ENV QLIBCURL="https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.tar.gz"
 
 # ------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ RUN apk add --no-cache python3 py3-pip && \
     python3 -m pip install --no-cache-dir --break-system-packages \
       ipython \
       grip \
-      pandas==2.1.4 \
+      pandas==2.3.3 \
       pudb \
       pyzmq \
       redis[hiredis] \
